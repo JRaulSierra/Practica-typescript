@@ -10,12 +10,14 @@ const sumaArrow = (a: number, b: number): number => {
 
 // con valores opcionales
 function sumaOptional(a: number, b?: number): number {
+  b = b ? b : 0;
   return a + b;
 }
 
 // funcion que no retorna nada
 
 function sumaVoid(a: number, b?: number): void {
+  b = b ? b : 0;
   let result = a + b;
   console.log(result);
 }
